@@ -59,7 +59,7 @@ module.exports = ({text, icon, cli}) => {
 					</div>
 				`) || ''}
 
-				<h1 class="text-5xl text-white font-display">
+				<h1 class="text-6xl text-white font-display">
 					${markdownify(text)}
 				</h1>
 			</div>
