@@ -6,7 +6,7 @@ Generate OpenGraph images for Project Wallace.
 
 ## Example image
 
-![example project wallace og image](https://og-image.project-wallace.now.sh/?text=Beautiful%20**SCSS%20Analytics**%20in%20your%20Terminal.&icon=wallace-cli&cli=npx%20wallace-cli%20css-analytics.com)
+![example project wallace og image](https://og-image.project-wallace.now.sh/?text=Project%20Wallace%20**Open%20Graph%20Image**%20generator&icon=analyzer)
 
 ```text
 https://og-image.project-wallace.now.sh/?text=Beautiful%20**SCSS%20Analytics**%20in%20your%20Terminal.&icon=wallace-cli&cli=npx%20wallace-cli%20css-analytics.com
