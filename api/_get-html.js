@@ -32,6 +32,13 @@ module.exports = ({text, icon, cli}) => {
 				${(icon && icon !== 'none' && `
 					<div class="mr-12 shadow-md self-start" style="background: hsl(203, 23%, 16%)">
 						<svg viewBox="0 0 15 15" width="150" height="auto" xmlns="http://www.w3.org/2000/svg">
+						${icon === 'analyzer' && `
+							<rect fill="#29c87d" width="6" height="1" y="3" x="3"></rect>
+							<rect fill="#29c87d" width="3" height="1" y="5" x="3"></rect>
+							<rect fill="#da2b2b" width="9" height="1" y="7" x="3"></rect>
+							<rect fill="#29c87d" width="5" height="1" y="9" x="3"></rect>
+							<rect fill="#29c87d" width="7" height="1" y="11" x="3"></rect>
+						`}
 						${icon === 'constyble' && `
 							<path fill="#29c87d" d="M4 3h2v2H4zM9 3h2v2H9zM5 7h6v4H5z" />
 						`}
