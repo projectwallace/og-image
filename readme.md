@@ -2,7 +2,7 @@
 
 Generate OpenGraph images for Project Wallace.
 
-[Link to configurator](https://svelte.dev/repl/fd7fa3a528534d2bb58de34b16eb9b9e?version=3.12.1`)
+[Link to configurator](https://svelte.dev/repl/fd7fa3a528534d2bb58de34b16eb9b9e?version=3.12.1)
 
 ## Example image
 
