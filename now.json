@@ -1,0 +1,10 @@
+{
+  "regions": ["all"],
+  "alias": "og-image.project-wallace.now.sh",
+  "public": true,
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/api" }
+  ]
+}
