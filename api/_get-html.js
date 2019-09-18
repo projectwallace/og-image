@@ -22,7 +22,7 @@ module.exports = ({text, icon, cli}) => {
 				font-family: "Teko";
 				font-weight: 500;
 				letter-spacing: .04em;
-				line-height: 1.1;
+				line-height: 1;
 				text-transform: uppercase;
 			}
 		</style>
