@@ -7,20 +7,31 @@
 		"node": "12.x"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"start": "sirv public"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@bartveneman/eslint-config-bv": "0.0.2",
-		"eslint": "^6.8.0"
+		"eslint": "^6.8.0",
+		"@rollup/plugin-commonjs": "^11.0.0",
+		"@rollup/plugin-node-resolve": "^7.0.0",
+		"rollup": "^1.20.0",
+		"rollup-plugin-livereload": "^1.0.0",
+		"rollup-plugin-svelte": "^5.0.3",
+		"rollup-plugin-terser": "^5.1.2",
+		"svelte": "^3.0.0"
 	},
 	"eslintConfig": {
 		"extends": "@bartveneman/eslint-config-bv"
 	},
 	"dependencies": {
 		"chrome-aws-lambda": "^2.0.2",
-		"puppeteer-core": "^2.0.0"
+		"puppeteer-core": "^2.0.0",
+		"sirv-cli": "^0.4.5"
 	}
 }

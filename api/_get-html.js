@@ -4,28 +4,14 @@ function markdownify(markdown) {
 		.replace(/\*\*/, '</span>')
 }
 
+const fs = require('fs')
+const path = require('path')
+const css = fs.readFileSync(path.resolve(__dirname, 'styles.css'), 'utf8')
+
 module.exports = ({text, icon, cli}) => {
 	return `
 		<!doctype html>
-		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Teko:500" rel="stylesheet">
-		<style>
-			body {
-				padding: 0;
-			}
-
-			.font-mono {
-				font-family: "Ubuntu Mono", monospace;
-			}
-
-			.font-display {
-				font-family: "Teko";
-				font-weight: 500;
-				letter-spacing: .04em;
-				line-height: 1;
-				text-transform: uppercase;
-			}
-		</style>
+		<style>${css}</style>
 
 		<article class="overflow-hidden p-16 relative" style="width: 700px; height: 400px; background-color: hsl(203.3, 27.3%, 12.9%); color: hsl(198, 10%, 82%);">
 			<div class="flex">
@@ -54,6 +40,11 @@ module.exports = ({text, icon, cli}) => {
 							<path fill="#ffba1a" d="M5 3h2v9H5z"/>
 							<path fill="#29c87d" d="M7 3h3v9H7z"/>
 							<path fill="#24ad6d" d="M10 3h2v9h-2z"/>
+						`}
+						${icon === 'extract-css' && `
+							<path d="M7.5,10 L9,12 L6,12" fill="#da2b2b"></path>
+							<rect fill="#29c87d" width="6" height="1" x="2" y="7" transform="rotate(45,7.5,7.5)"></rect>
+							<rect fill="#29c87d" width="6" height="1" x="7" y="7" transform="rotate(-45,7.5,7.5)"></rect>
 						`}
 						</svg>
 					</div>

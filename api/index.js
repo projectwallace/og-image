@@ -3,7 +3,6 @@ const getHtml = require('./_get-html')
 const {writeTempFile, pathToFileURL} = require('./_file')
 const {getScreenshot} = require('./_chromium')
 
-// TODO: make text highlighting work
 module.exports = async (req, res) => {
 	const parsedRequest = parseRequest(req)
 	const {text, cli, icon} = parsedRequest
