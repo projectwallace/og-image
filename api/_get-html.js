@@ -46,6 +46,10 @@ module.exports = ({text, icon, cli}) => {
 							<rect fill="#29c87d" width="6" height="1" x="2" y="7" transform="rotate(45,7.5,7.5)"></rect>
 							<rect fill="#29c87d" width="6" height="1" x="7" y="7" transform="rotate(-45,7.5,7.5)"></rect>
 						`}
+						${icon === 'diff' && `
+							<path fill="#29c87d" d="M7 3h1v3h3v1H8v3H7V7H4V6h3z"></path>
+							<rect width="7" height="1" fill="#da2b2b" x="4" y="11"></rect>
+						`}
 						</svg>
 					</div>
 				`) || ''}
