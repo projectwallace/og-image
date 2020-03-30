@@ -5,7 +5,8 @@
     "wallace-cli",
     "color-sorter",
     "analyzer",
-    "extract-css"
+    "extract-css",
+    "diff"
   ];
 
   export let value;
